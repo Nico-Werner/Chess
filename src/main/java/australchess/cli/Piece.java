@@ -1,6 +1,8 @@
 package australchess.cli;
 
-public class Piece {
+import java.util.List;
+
+public class Piece implements Position{
 
     private boolean active;
 
@@ -52,5 +54,25 @@ public class Piece {
 
     public boolean isMovesOneTime() {
         return movesOneTime;
+    }
+
+    @Override
+    public List<Space> getPositions() {
+        return null;
+    }
+
+    @Override
+    public boolean move(Space space) {
+        return false;
+    }
+
+    @Override
+    public Space getPosition() {
+        return null;
+    }
+
+    @Override
+    public void setPosition(Space space) {
+
     }
 }

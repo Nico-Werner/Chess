@@ -37,7 +37,7 @@ public class App {
     }
 
     private static void move(ParsedPosition from, ParsedPosition to) {
-        // TODO implement!
+
     }
 
     private static String playerToMove() {

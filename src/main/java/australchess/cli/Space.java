@@ -8,6 +8,9 @@ public class Space {
         this.piece = piece;
     }
 
+    public Space() {
+    }
+
     public Piece getPiece() {
         return piece;
     }
