@@ -8,12 +8,19 @@ import java.util.Scanner;
 // Starter CLI interface for the chess game, modify as you wish.
 // TODO: Fill in!
 public class App {
+
     public static void main(String[] args) throws IOException {
         final BoardPrinter boardPrinter = new DefaultBoardPrinter();
 
+        Player player1;
+        Player player2;
+
         printHeader();
         final var firstPlayerId = askForString("Name of player that moves white: ");
+        player1 = new Player(firstPlayerId, Color.WHITE);
         final var secondPlayerId = askForString("Name of player that moves black: ");
+        player2 = new Player(firstPlayerId, Color.BLACK);
+
         System.out.println();
         System.out.println();
 
@@ -45,7 +52,7 @@ public class App {
     }
 
     private static boolean shouldContinue() {
-        return true; //TODO Implement!
+        return true; //TODO Implement! CheckMateValidator and isKingDead
     }
 
     private static ParsedPosition askForPosition(String question) {

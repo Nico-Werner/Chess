@@ -2,11 +2,11 @@ package australchess.cli;
 
 public class Player {
 
-    private int playerId;
+    private String playerId;
 
     private Color color;
 
-    public Player(int playerId, Color color) {
+    public Player(String playerId, Color color) {
         this.playerId = playerId;
         this.color = color;
     }
@@ -14,11 +14,11 @@ public class Player {
     public Player() {
     }
 
-    public int getPlayerId() {
+    public String getPlayerId() {
         return playerId;
     }
 
-    public void setPlayerId(int playerId) {
+    public void setPlayerId(String playerId) {
         this.playerId = playerId;
     }
 
